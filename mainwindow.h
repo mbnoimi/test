@@ -16,13 +16,6 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     
-private slots:
-    void on_verticalScrollBar_valueChanged(int value);
-
-    void on_verticalScrollBar_sliderMoved(int position);
-
-    void on_listWidget_viewportEntered();
-
 private:
     Ui::MainWindow *ui;
 };

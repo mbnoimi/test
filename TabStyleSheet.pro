@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2013-08-26T01:19:26
+# Project created by QtCreator 2013-09-01T01:35:04
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = QListAndQScroll
+TARGET = TabStyleSheet
 TEMPLATE = app
 
 
@@ -18,3 +18,6 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    res.qrc

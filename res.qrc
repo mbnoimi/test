@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/esd.png</file>
+        <file>icons/Eterm.png</file>
+        <file>icons/evolution-1.4.png</file>
+        <file>icons/evolution-1.5.png</file>
+        <file>icons/evolution-calendar.png</file>
+        <file>icons/evolution-contacts.png</file>
+        <file>icons/evolution-mail.png</file>
+        <file>icons/evolution-tasks.png</file>
+        <file>icons/evolution.png</file>
+        <file>icons/exec_wine.png</file>
+        <file>icons/FastDL.png</file>
+    </qresource>
+</RCC>

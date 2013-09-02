@@ -6,283 +6,206 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>739</width>
-    <height>467</height>
+    <width>621</width>
+    <height>416</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">    QMainWindow#MainWindow {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.05 rgba(14, 8, 73, 255), stop:0.36 rgba(28, 17, 145, 255), stop:0.6 rgba(126, 14, 81, 255), stop:0.75 rgba(234, 11, 11, 255), stop:0.79 rgba(244, 70, 5, 255), stop:0.86 rgba(255, 136, 0, 255), stop:0.935 rgba(239, 236, 55, 255));
+    }
+     
+    QWidget#centralWidget {
+     background-color: rgba(255, 255, 255, 0);
+    }
+    /**************** SIDE BAR ****************/
+    QTabWidget#tabWidget_sidebar {
+     background-color: rgba(255, 255, 255, 0);
+    }
+     
+    QTabWidget#tabWidget_sidebar::tab-bar {
+     alignment: center;
+    }
+     
+    QTabWidget#tabWidget_sidebar::pane {
+     background-color: rgb(255, 255, 255, 0);
+    }
+     
+    QTabBar::tab {
+     background-color: rgb(0, 0, 0, 0);
+     padding: 2px;
+     border: 2px;
+     text-align: center;
+     height: 64px;
+     width: 64px;
+    }
+     
+    QTabBar::tab:selected {
+     background-color: rgba(255, 255, 255, 100);
+    }
+     
+    QTabBar::tab:hover {
+       background-color: rgba(255, 255, 255, 150);
+    }
+
+QListWidget#listWidget {
+	background-color: rgba(255, 255, 255, 0);
+}</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::West</enum>
       </property>
-      <property name="sizeHint" stdset="0">
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <property name="iconSize">
        <size>
-        <width>40</width>
-        <height>20</height>
+        <width>64</width>
+        <height>64</height>
        </size>
       </property>
-     </spacer>
+      <widget class="QWidget" name="tab">
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/icons/FastDL.png</normaloff>:/icons/FastDL.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="widget">
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/icons/evolution-contacts.png</normaloff>:/icons/evolution-contacts.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/icons/exec_wine.png</normaloff>:/icons/exec_wine.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/icons/evolution-calendar.png</normaloff>:/icons/evolution-calendar.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/icons/evolution-1.5.png</normaloff>:/icons/evolution-1.5.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/icons/esd.png</normaloff>:/icons/esd.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/icons/evolution-tasks.png</normaloff>:/icons/evolution-tasks.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string/>
+       </attribute>
+      </widget>
+     </widget>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
+     <widget class="QListWidget" name="listWidget">
       <item>
-       <widget class="QListWidget" name="listWidget">
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-       </widget>
+       <property name="text">
+        <string>New Item</string>
+       </property>
       </item>
       <item>
-       <widget class="QScrollBar" name="verticalScrollBar">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>26</height>
-         </size>
-        </property>
-       </widget>
+       <property name="text">
+        <string>New Item</string>
+       </property>
       </item>
-     </layout>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Item</string>
+       </property>
+      </item>
+     </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>739</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>
